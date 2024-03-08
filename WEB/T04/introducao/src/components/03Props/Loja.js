@@ -12,7 +12,7 @@ const Loja = () => {
                 categoria="Livro" 
                 valor={55}
             />
-            <hr />s
+            <hr />
             <Produto nome="Pizza de Calabresa" categoria="Alimentação" valor={16.99}/>
         </div>
     )

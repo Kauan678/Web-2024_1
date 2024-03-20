@@ -12,7 +12,11 @@ const Loja = () => {
                 categoria="Livro" 
                 valor={55}
             />
+<<<<<<< HEAD
             <hr />s
+=======
+            <hr />
+>>>>>>> 95288af931f63abab6996522c7105f788d3d2888
             <Produto nome="Pizza de Calabresa" categoria="Alimentação" valor={16.99}/>
         </div>
     )

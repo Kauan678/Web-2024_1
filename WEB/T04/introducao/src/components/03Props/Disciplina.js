@@ -1,4 +1,5 @@
 //nome, código da disciplina, créditos, período
+<<<<<<< HEAD
 const Disciplina = ({nome, cod, credito, periodo}) => {
 
   return(
@@ -21,3 +22,5 @@ const Disciplina = ({nome, cod, credito, periodo}) => {
 }
 
 export default Disciplina
+=======
+>>>>>>> 95288af931f63abab6996522c7105f788d3d2888

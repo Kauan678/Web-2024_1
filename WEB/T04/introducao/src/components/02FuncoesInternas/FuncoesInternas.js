@@ -4,9 +4,13 @@ const FuncoesInternas = () => {
     let numero2 = 3
     let myNumber = 3.14565653
 
+<<<<<<< HEAD
     function somar(x, y){
         return x + y
     }
+=======
+    const somar = (x, y) => x + y
+>>>>>>> 95288af931f63abab6996522c7105f788d3d2888
 
     /*const subtrair = (x, y) => {
         return x - y
@@ -16,9 +20,13 @@ const FuncoesInternas = () => {
 
     const multiplicar = (x, y) => x * y
     
+<<<<<<< HEAD
     const dividir = (x, y) => {
         return x / y
     }
+=======
+    const dividir = (x, y) => x / y
+>>>>>>> 95288af931f63abab6996522c7105f788d3d2888
 
     return (
         <div>

@@ -7,11 +7,9 @@ const SistemaSolar = ({children, galaxia}) => {
         <>
             <h2>Sistema Solar da Galáxia {galaxia}</h2>
             <hr />
-            {
-                React.Children.map(
-                    children,
-                    ( elemento ) => {
-                        return React.cloneElement(elemento,{galaxia})
+            {React.Children.map
+                (children, (elemento) => 
+                    {return React.cloneElement(elemento, {galaxia})
                     }
                 )
             }

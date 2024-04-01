@@ -4,7 +4,7 @@ import {PokemonContexto} from "./PokemonContext"
 
 const PokemonPrincipal = () => {
 
-    //const id = 100
+    //const id = 250
     const [id, setId] = useState(250)
 
     return (

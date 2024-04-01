@@ -41,10 +41,10 @@ const CompD = () => {
 }
 
 const CompE = () => {
-  const {curso} = useContext(Variavel);
+  const {nome, curso} = useContext(Variavel)
   return (
     <div>
-      <h3>E: {curso}</h3>
+      <h3>E: {nome}, {curso}</h3>
     </div>
   )
 }

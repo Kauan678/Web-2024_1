@@ -8,15 +8,7 @@ const PokemonIncrementar = () => {
     return (
         <div>
             <button
-                onClick = {
-                    () => {
-                        setId(
-                            (anterior) => {
-                                return anterior + 1
-                            }
-                        )
-                    }
-                }
+                onClick = {() => setId(anterior => anterior + 1)}
             >
                 Incrementar
             </button>

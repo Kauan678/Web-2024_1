@@ -8,12 +8,11 @@ const PokemonDecrementar = () => {
     return (
         <div>
             <button
-                onClick = {() => setId (a => a - 1)}
+                onClick = {() => setId(anterior => anterior - 1)}
             >
                 Decrementar
             </button>
         </div>
     )
 }
-
 export default PokemonDecrementar

@@ -1,4 +1,4 @@
-//PROP DRILLING
+// PROP DRILLING
 const CompA = () => {
 
   const variavelDeA = "Variável de 'A' Alterada"

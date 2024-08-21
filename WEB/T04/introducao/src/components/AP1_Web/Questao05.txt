@@ -1,0 +1,56 @@
+O uso de contextos em react elimina a necessidade de passar as props manualmente através de vários níveis dos componentes, o que deixa o código mais legível e facilita a manutenção, além de permitir que dados e estados sejam gerenciados centralmente, facilitando o gerenciamento de estados complexos. Isso também deixa a refatoração dos componentes mais simples, porque dependências dos dados ficam mais explícitas e menos acopladas umas nas outras.
+
+// Exemplo usando Prop Drilling:
+
+const App = () => {
+  const usuário = {name: "Kauan"}
+
+  return <ComponentePai user = {usuário} />
+}
+
+const ComponentePai = ({usuário}) => {
+  return <ComponenteFilho user = {usuário} />
+}
+
+const ComponenteFilho = ({usuário}) => {
+  return <ComponenteNeto user = {usuário} />
+}
+
+const ComponenteNeto = ({ user }) => {
+  return <p> {usuário.name} </p>
+}
+
+// Melhoria do exemplo anterior, usando contextos:
+
+import React from "react"
+
+// Criando o Contexto
+const useContext = React.createContext()
+
+const App = () => {
+  const usuário = {name: "Kauan"}
+
+  return (
+    // Usando o Provider 
+    <useContext.Provider value = {usuário}>
+      <ComponentePai />
+    </useContext.Provider>
+  )
+}
+
+const ComponentePai = () => {
+  return <ComponenteFilho />
+}
+
+const ComponenteFilho = () => {
+  return <ComponenteNeto />
+}
+
+const ComponenteNeto = () => {
+  // Usando o Contexto
+  const usuário = React.useContext(useContext)
+
+  return <p> {usuário.name} </p>
+}
+
+export default App

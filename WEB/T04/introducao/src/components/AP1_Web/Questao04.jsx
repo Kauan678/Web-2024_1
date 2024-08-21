@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 
 function Questao04() {
+  // Inicializando os estados para armazenar os dados e possíveis erros
   const [data, setData] = useState([])
   const [error, setError] = useState(null)
 
@@ -25,6 +26,7 @@ function Questao04() {
       })
   })
 
+  // Verificando se houve erro e exibindo a mensagem
   if (error) {
     return (
       <div>
@@ -33,6 +35,7 @@ function Questao04() {
     )
   }
 
+  // Retornando os dados das capitais
   return (
     <div>
       <h1> Dados das Capitais </h1>
